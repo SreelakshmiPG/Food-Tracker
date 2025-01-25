@@ -93,6 +93,10 @@ Feel free to contribute to the project, suggest features, or enjoy tracking your
 
 ---
 
+**PHOTOS/VIDEO**
+
+https://drive.google.com/drive/folders/13B1uzcbd0VIAO6tN2c9Aip0cdMAFe_On?usp=sharing
+
 **Team Contributions**
 
 Sreelakshmi P G: Main programming
