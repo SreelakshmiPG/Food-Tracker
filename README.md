@@ -22,36 +22,6 @@ Introducing the Nutrient Tracker—an app that turns your everyday meals into da
 
 ---
 
-## **Installation**
-Get started with the following steps:
-
-1. Clone this repository:
-   ```bash
-   git clone https://github.com/your-repo/nutrient-tracker.git
-   ```
-
-2. Navigate to the project directory:
-   ```bash
-   cd nutrient-tracker
-   ```
-
-3. Install dependencies:
-   ```bash
-   npm install
-   ```
-
----
-
-## **Run**
-Start the application with:
-
-```bash
-npm start
-```
-
-Then, open your browser and visit: `http://localhost:3000`
-
----
 
 ## **Project Documentation**
 
