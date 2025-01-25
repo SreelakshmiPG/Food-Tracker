@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Food Tracker</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>Food Tracker</h1>
+    <p>Track your daily nutrition intake in style!</p>
+  </header>
+  
+  <main>
+    <form id="foodForm">
+      <label for="foodInput">What did you eat today?</label>
+      <input type="text" id="foodInput" placeholder="e.g., Banana, Eggs, Rice" required>
+      <button type="submit">Add Food</button>
+    </form>
+    <section id="results">
+      <h2>Daily Nutrition Data</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>Food</th>
+            <th>Carbs (g)</th>
+            <th>Protein (g)</th>
+            <th>Fats (g)</th>
+            <th>Minerals</th>
+            <th>Vitamins</th>
+          </tr>
+        </thead>
+        <tbody id="foodData">
+          <!-- Food data will populate here -->
+        </tbody>
+      </table>
+    </section>
+    <section id="missedNutrients" style="margin-top: 20px; background-color: #ffe5ec; padding: 20px; border-radius: 10px; box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);">
+      <h3>Missed Nutrients</h3>
+      <p><strong>Carbs:</strong> 0g</p>
+      <p><strong>Protein:</strong> 0g</p>
+      <p><strong>Fats:</strong> 0g</p>
+      <p><strong>Vitamins Missed:</strong> None</p>
+      <p><strong>Minerals Missed:</strong> None</p>
+    </section>
+    <div class="charts-container">
+      <div class="chart-wrapper">
+        <h3>Carbs Intake</h3>
+        <canvas id="carbsChart" width="400" height="400"></canvas>
+      </div>
+      <div class="chart-wrapper">
+        <h3>Protein Intake</h3>
+        <canvas id="proteinsChart" width="400" height="400"></canvas>
+      </div>
+      <div class="chart-wrapper">
+        <h3>Fats Intake</h3>
+        <canvas id="fatsChart" width="400" height="400"></canvas>
+      </div>
+    </div>
+    <div id="waterTracker" style="margin-top: 20px; text-align: center;">
+        <h3>Hydration Tracker</h3>
+        <label>
+          <input type="checkbox" id="waterCheckbox">
+          I drank 8 glasses of water today!
+        </label>
+    </div>
+      
+    <div id="funFactBox" style="background: #f6d7f6; color: #5F5AA2; border-radius: 15px; padding: 20px; text-align: center; margin: 20px 0; font-size: 1.2rem; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);">
+        <h3>Food Nutrient Fun Fact</h3>
+        <p id="funFact" style="font-style: italic;"></p>
+    </div>
+      
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  </main>
+  
+  <footer>
+    <p>Stay healthy! 🌸</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
